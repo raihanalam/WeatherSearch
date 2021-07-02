@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    font-family: 'montserrat', sans-serif;
+    background-image: url("weather-bg.png"); 
+    background-position: top center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+#searchBox{
+    height: 50px;
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid rgb(204, 117, 45);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+.wrapper .header{
+    height: 50px;
+    padding: 5px;
+}
+.wrapper .header h3{
+    text-align: center;
+    font-size: 25px;
+}
+.wrapper .header h3 i{
+    color: #272727;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+}
+.app small{
+    margin: 8px;
+    color: rgb(214, 211, 211);
+}
+.app .location, .current{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app .location .city{
+    color: white;
+    font-size: 30px;
+}
+.app .location .date{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.app .current .temp {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.app .current .temp span{
+    font-size: 35px;
+}
+.app .current .weather{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.app .current .hi-low{
+    color: white;
+    font-size: 15px; 
+}
+.wrapper .footer{
+    color: white;
+    padding: 5px;
+    height: 40px;
+    text-align: center;
+}
